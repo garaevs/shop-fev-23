@@ -12,6 +12,7 @@ body {
 .wrapper {
 	margin: auto;
 	margin-top: 85px;
+	margin-bottom: 85px;
 	width: 100%;
 	max-width: 1080px;
 	font-family: 'Inter';
@@ -27,7 +28,7 @@ body {
 	.header {
 		display: flex;
 		justify-content: space-between;
-		padding: 43px 45px 45px;
+		padding: 43px 60px 45px;
 		border-bottom: 2px solid #eaeaea;
 
 		.logo {
@@ -77,10 +78,7 @@ body {
 					height: 17px;
 				}
 			}
-			// p {
-			// 	padding: 0;
-			// 	margin: 0;
-			// }
+
 			.favorite {
 				width: 21px;
 				height: 19px;
@@ -96,5 +94,45 @@ body {
 	.reklama {
 		text-align: center;
 		margin: 45px auto 37px;
+	}
+
+	.shop {
+		margin-left: 60px;
+		margin-right: 60px;
+		.shop__header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 40px;
+
+			.shop__title {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 39px;
+			}
+
+			.shop__search {
+				position: relative;
+				img {
+					position: absolute;
+					top: 15px;
+					left: 18px;
+				}
+				input {
+					width: 200px;
+					height: 45px;
+					padding-left: 48px;
+					border: 1px solid #f3f3f3;
+					border-radius: 10px;
+				}
+			}
+		}
+
+		.shop__catalog {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
 	}
 }

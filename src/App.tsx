@@ -5,6 +5,9 @@ import logoSvg from './assets/images/logo.svg';
 import cartSvg from './assets/images/cart.svg';
 import favoriteSvg from './assets/images/favorite.svg';
 import profileSvg from './assets/images/profile.svg';
+import searchSvg from './assets/images/search.svg';
+
+import Item from './components/Item';
 
 function App() {
 	return (
@@ -28,6 +31,25 @@ function App() {
 			</header>
 			<div className='reklama'>
 				<img src='/assets/images/reklama.png' alt='reklama' />
+			</div>
+			<div className='shop'>
+				<div className='shop__header'>
+					<div className='shop__title'>Все кроссовки</div>
+					<div className='shop__search'>
+						<img src={searchSvg} alt='search' />
+						<input type='text' placeholder='Поиск...' />
+					</div>
+				</div>
+				<div className='shop__catalog'>
+					<Item />
+					<Item />
+					<Item />
+					<Item />
+					<Item />
+					<Item />
+					<Item />
+					<Item />
+				</div>
 			</div>
 		</div>
 	);
