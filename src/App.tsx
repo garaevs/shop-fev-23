@@ -1,56 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+
 import './App.scss';
 
-import logoSvg from './assets/images/logo.svg';
-import cartSvg from './assets/images/cart.svg';
-import favoriteSvg from './assets/images/favorite.svg';
-import profileSvg from './assets/images/profile.svg';
-import searchSvg from './assets/images/search.svg';
-
-import Item from './components/Item';
+import Cart from './pages/Cart';
+import Favorit from './pages/Favorit';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import { addItems } from './store/items/itemSlice';
+import { AppDispatch } from './store/store';
+import { useAppDispatch } from './store/hooks';
 
 function App() {
+	const dispatch: AppDispatch = useAppDispatch();
+
+	useEffect(() => {
+		async function fetchData() {
+			const response = await axios.get('http://localhost:3001/items').then(({ data }) => data);
+			await dispatch(addItems(response));
+		}
+		fetchData();
+	}, [dispatch]);
+
 	return (
 		<div className='wrapper'>
-			<header className='header'>
-				<div className='logo'>
-					<img src={logoSvg} alt='logo' />
-					<div className='logoName'>
-						<div className='logoTitle'>React Snikers</div>
-						<div className='logoSubtitle'>Магазин лучших кроссовок</div>
-					</div>
-				</div>
-				<div className='profile'>
-					<div className='myCart'>
-						<img src={cartSvg} alt='cart' />
-						<p className='price'>1205 руб.</p>
-					</div>
-					<img src={favoriteSvg} className='favorite' alt='favorite' />
-					<img src={profileSvg} className='profileSvg' alt='cabinet' />
-				</div>
-			</header>
-			<div className='reklama'>
-				<img src='/assets/images/reklama.png' alt='reklama' />
-			</div>
-			<div className='shop'>
-				<div className='shop__header'>
-					<div className='shop__title'>Все кроссовки</div>
-					<div className='shop__search'>
-						<img src={searchSvg} alt='search' />
-						<input type='text' placeholder='Поиск...' />
-					</div>
-				</div>
-				<div className='shop__catalog'>
-					<Item />
-					<Item />
-					<Item />
-					<Item />
-					<Item />
-					<Item />
-					<Item />
-					<Item />
-				</div>
-			</div>
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/fav' element={<Favorit />} />
+				<Route path='/cart' element={<Cart />} />
+				<Route path='/profile' element={<Profile />} />
+			</Routes>
 		</div>
 	);
 }

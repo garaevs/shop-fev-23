@@ -1,0 +1,29 @@
+.shop__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+
+	.shop__title {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 39px;
+	}
+
+	.shop__search {
+		position: relative;
+		img {
+			position: absolute;
+			top: 15px;
+			left: 18px;
+		}
+		input {
+			width: 200px;
+			height: 45px;
+			padding-left: 48px;
+			border: 1px solid #f3f3f3;
+			border-radius: 10px;
+		}
+	}
+}

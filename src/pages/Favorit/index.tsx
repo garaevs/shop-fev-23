@@ -1,7 +1,9 @@
+import React from 'react';
+
 import Header from '../../components/Header';
 import Shop from '../../components/Shop';
 
-const Cart = () => {
+const Favorit = () => {
 	return (
 		<>
 			<Header />
@@ -10,4 +12,4 @@ const Cart = () => {
 	);
 };
 
-export default Cart;
+export default Favorit;

@@ -1,0 +1,11 @@
+.shop {
+	margin-top: 40px;
+	margin-left: 60px;
+	margin-right: 60px;
+
+	.shop__catalog {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
