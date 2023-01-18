@@ -9,6 +9,8 @@ type Items = {
 	title: string;
 	price: number;
 	imgUrl: string;
+	id: number;
+	fav: boolean;
 };
 
 type ItemArray = {
@@ -22,7 +24,7 @@ const Shop: React.FC<ItemArray> = ({ items }) => {
 			<Title />
 			<div className={styles.shop__catalog}>
 				{items.map(item => (
-					<Item key={item.imgUrl} {...item} />
+					<Item key={item.id} {...item} />
 				))}
 			</div>
 		</div>
