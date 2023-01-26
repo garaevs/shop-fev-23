@@ -9,7 +9,7 @@ const Cart = () => {
 	return (
 		<>
 			<Header />
-			<Shop items={items} />
+			<Shop items={items} title={'Корзина'} />
 		</>
 	);
 };

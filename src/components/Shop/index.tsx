@@ -15,17 +15,17 @@ type Items = {
 
 type ItemArray = {
 	items: Items[];
+	title: string;
 };
 
-const Shop: React.FC<ItemArray> = ({ items }) => {
-	console.log(items, 'shop');
+const Shop: React.FC<ItemArray> = ({ items, title }) => {
+	// console.log(items, 'shop');
+
 	return (
 		<div className={styles.shop}>
-			<Title />
+			<Title title={title} />
 			<div className={styles.shop__catalog}>
-				{items.map(item => (
-					<Item key={item.id} {...item} />
-				))}
+				{items.length > 0 ? items.map(item => <Item key={item.id} {...item} />) : 'No shop'}
 			</div>
 		</div>
 	);

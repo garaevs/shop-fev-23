@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import { addItems } from './store/items/itemSlice';
 import { AppDispatch } from './store/store';
-import { useAppDispatch } from './store/hooks';
+import { useAppDispatch, useAppSelector } from './store/hooks';
 
 function App() {
 	const dispatch: AppDispatch = useAppDispatch();

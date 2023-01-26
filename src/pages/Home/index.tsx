@@ -9,12 +9,12 @@ import Shop from '../../components/Shop';
 
 const Home = () => {
 	const items = useAppSelector(state => state.items.items);
-	console.log(items, 'home');
+	// console.log(items, 'home');
 	return (
 		<>
 			<Header />
 			<Banner />
-			<Shop items={items} />
+			<Shop items={items} title={'Все кроссовки'} />
 		</>
 	);
 };
