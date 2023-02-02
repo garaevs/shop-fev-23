@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './Shop.module.scss';
 
 import Title from '../Title';
+// import CartItem from '../CartItem';
 import Item from '../Item';
 
 type Items = {

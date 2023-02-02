@@ -28,8 +28,14 @@ export const cartSlice = createSlice({
 				items: state.items.concat(action.payload),
 			};
 		},
+		clearCartSlice(state, action) {
+			return { ...state, items: [] };
+		},
+		deleteCartSlice(state, action: PayloadAction<Item[]>) {
+			return { ...state, items: action.payload };
+		},
 	},
 });
 
-export const { addCartSlice } = cartSlice.actions;
+export const { addCartSlice, clearCartSlice, deleteCartSlice } = cartSlice.actions;
 export default cartSlice.reducer;

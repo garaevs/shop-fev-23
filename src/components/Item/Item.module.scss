@@ -31,6 +31,7 @@
 
 		&:hover {
 			background-color: #fef0f0;
+			transition: background-color 0.4s;
 
 			svg {
 				fill: #ff8585;
@@ -99,6 +100,11 @@
 				border-radius: 8px;
 				color: #d3d3d3;
 				cursor: pointer;
+
+				&:hover {
+					background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+					color: #ffffff;
+				}
 			}
 		}
 	}

@@ -1,0 +1,117 @@
+.item {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	// width: 210px;
+	// height: 260px;
+	margin-bottom: 20px;
+	// margin-right: 28px;
+	background: #ffffff;
+	border: 1px solid #f3f3f3;
+	border-radius: 40px;
+	// text-align: center;
+	// position: relative;
+
+	// .fav {
+	// 	position: absolute;
+	// 	top: 29px;
+	// 	left: 30px;
+	// 	width: 32px;
+	// 	height: 32px;
+	// 	border: 1px solid #f8f8f8;
+	// 	border-radius: 7px;
+	// 	text-align: center;
+	// 	line-height: 41px;
+	// 	cursor: pointer;
+
+	// 	svg {
+	// 		margin: 0;
+	// 		width: 20px;
+	// 		height: 20px;
+	// 		fill: #9b9b9b;
+	// 		// color: #ececec;
+	// 	}
+
+	// 	&:hover {
+	// 		background-color: #fef0f0;
+	// 		transition: background-color 0.4s;
+
+	// 		svg {
+	// 			fill: #ff8585;
+	// 		}
+	// 	}
+	// }
+	// .svg_active {
+	// 	background-color: #fef0f0;
+
+	// 	svg {
+	// 		fill: #ff8585;
+	// 	}
+	// }
+
+	img {
+		width: 133px;
+		height: 112px;
+		// margin-top: 20px;
+		// margin-bottom: 14px;
+	}
+
+	.item__title {
+		margin: 0 auto;
+		text-align: left;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		cursor: pointer;
+	}
+
+	.item__cart {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 30px;
+
+		.item__price {
+			text-align: left;
+			.price_name {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 11px;
+				line-height: 13px;
+				text-transform: uppercase;
+				color: #bdbdbd;
+			}
+
+			.price {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 17px;
+				color: #000000;
+			}
+		}
+
+		// .item__add {
+		// 	button {
+		// 		width: 32px;
+		// 		height: 32px;
+		// 		background: #ffffff;
+		// 		border: 1px solid #f2f2f2;
+		// 		border-radius: 8px;
+		// 		color: #d3d3d3;
+		// 		cursor: pointer;
+
+		// 		&:hover {
+		// 			background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+		// 			color: #ffffff;
+		// 		}
+		// 	}
+		// }
+	}
+	.delete__cart {
+		width: 30px;
+		cursor: pointer;
+	}
+}

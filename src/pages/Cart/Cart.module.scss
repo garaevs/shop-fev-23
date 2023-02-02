@@ -1,0 +1,28 @@
+.shop {
+	margin-top: 40px;
+	margin-left: 60px;
+	margin-right: 60px;
+
+	.shop__catalog {
+		padding-bottom: 40px;
+	}
+	.cart__add {
+		padding-bottom: 40px;
+		text-align: right;
+
+		.price__info {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		button {
+			padding: 8px 15px;
+			border: 2px solid rgb(44, 75, 73);
+			border-radius: 20px;
+			background-color: rgb(80, 150, 80);
+			color: #fff;
+			font-size: 12px;
+			cursor: pointer;
+		}
+	}
+}
