@@ -3,54 +3,54 @@
 	margin-left: 60px;
 	margin-right: 60px;
 
-	.no__items {
-		text-align: center;
-
-		img {
-			width: 70px;
-			height: 70px;
-			margin-bottom: 24px;
-		}
-
-		.no__title {
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 600;
-			font-size: 24px;
-			line-height: 29px;
-			margin-bottom: 11px;
-		}
-
-		.no__subtitle {
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 24px;
-			opacity: 0.4;
-			margin-bottom: 41px;
-		}
-
-		button {
-			width: 245px;
-			height: 55px;
-			margin-bottom: 51px;
-			background: #9dd458;
-			border-radius: 18px;
-			border: none;
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 600;
-			font-size: 16px;
-			line-height: 19px;
-			text-align: center;
-			color: #ffffff;
-			cursor: pointer;
-		}
-	}
-
 	.shop__catalog {
 		padding-bottom: 40px;
+
+		.no__items {
+			text-align: center;
+
+			img {
+				width: 70px;
+				height: 70px;
+				margin-bottom: 24px;
+			}
+
+			.no__title {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 29px;
+				margin-bottom: 11px;
+			}
+
+			.no__subtitle {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				opacity: 0.4;
+				margin-bottom: 41px;
+			}
+
+			button {
+				width: 245px;
+				height: 55px;
+				margin-bottom: 51px;
+				background: #9dd458;
+				border-radius: 18px;
+				border: none;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 19px;
+				text-align: center;
+				color: #ffffff;
+				cursor: pointer;
+			}
+		}
 	}
 	.cart__add {
 		padding-bottom: 40px;
