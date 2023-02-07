@@ -16,6 +16,11 @@ const Cart = () => {
 	const items = useAppSelector(state => state.cartItems.items);
 	const sumItems = items.reduce((sum, current) => sum + current.price, 0);
 
+	const byItems = () => {
+		dispatch(clearCartSlice([]));
+		alert('Заказ оформлен');
+	};
+
 	const onClearCart = () => {
 		dispatch(clearCartSlice([]));
 	};
@@ -48,7 +53,12 @@ const Cart = () => {
 						<p className={styles.price__info}>
 							Итоговая стоимость: <b>{sumItems > 0 ? sumItems : '0'} руб.</b>
 						</p>
-						<button onClick={() => onClearCart()}>Очистить корзину</button>
+						<button onClick={() => byItems()} className={styles.by__items}>
+							Оформить заказ
+						</button>
+						<button className={styles.clear__cart} onClick={() => onClearCart()}>
+							Очистить корзину
+						</button>
 					</div>
 				) : (
 					''

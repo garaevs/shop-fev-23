@@ -61,11 +61,22 @@
 			margin-bottom: 20px;
 		}
 
-		button {
-			padding: 8px 15px;
-			border: 2px solid rgb(44, 75, 73);
+		.by__items {
+			padding: 10px 18px;
+			border: 2px solid rgb(98, 223, 154);
 			border-radius: 20px;
-			background-color: rgb(80, 150, 80);
+			background-color: rgb(28, 199, 12);
+			color: #fff;
+			font-size: 12px;
+			cursor: pointer;
+			margin-right: 15px;
+		}
+
+		.clear__cart {
+			padding: 5px 10px;
+			border: 2px solid rgb(236, 71, 107);
+			border-radius: 20px;
+			background-color: rgb(243, 1, 82);
 			color: #fff;
 			font-size: 12px;
 			cursor: pointer;
